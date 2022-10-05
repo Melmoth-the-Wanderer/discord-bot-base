@@ -13,25 +13,25 @@ export class _Logger {
 
   public verbose(...args: unknown[]): void {
     if (this.isVerboseEnabled()) {
-      this.log('V', ...args);
+      console.log(this.getLogArguments('V', ...args));
     }
   }
 
   public info(...args: unknown[]): void {
     if (this.isInfoEnabled()) {
-      this.log('I', ...args);
+      console.info(this.getLogArguments('I', ...args));
     }
   }
 
   public warning(...args: unknown[]): void {
     if (this.isWarningEnabled()) {
-      this.log('WARN', ...args);
+      console.warn(this.getLogArguments('W', ...args));
     }
   }
 
   public error(...args: unknown[]): void {
     if (this.isErrorEnabled()) {
-      this.log(' ! ERR ! ', ...args);
+      console.error(this.getLogArguments('! ERR !', ...args));
     }
   }
 
@@ -51,7 +51,7 @@ export class _Logger {
     return (this.level & LogLevel.Error) > 0;
   }
 
-  private log(levelMarker: string, ...args: unknown[]): void {
-    console.log(`[${levelMarker}] PTW: `, ...args);
+  private getLogArguments(levelMarker: string, ...args: unknown[]): [string, ...unknown[]] {
+    return [`[${levelMarker}] : `, ...args];
   }
 }
