@@ -1,19 +1,15 @@
 import { LogLevel } from './model';
 
 export class _Logger {
-  public get defaultLevel(): LogLevel {
-    return _Logger.getDefaultLogLevel();
-  }
-
-  constructor(private level: LogLevel) {}
-
-  private static getDefaultLogLevel(): LogLevel {
+  public static getDefaultLogLevel(): LogLevel {
     const isDevMode = process.env.DISCORD_PTW_BOT_IS_DEV_MODE == 'true';
     const devLogLevel = LogLevel.Verbose | LogLevel.Info | LogLevel.Warning | LogLevel.Error;
     const prodLogLevel = LogLevel.Warning | LogLevel.Error;
 
     return isDevMode ? devLogLevel : prodLogLevel;
   }
+
+  constructor(private level: LogLevel) {}
 
   public verbose(...args: unknown[]): void {
     if (this.isVerboseEnabled()) {
