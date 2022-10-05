@@ -15,6 +15,9 @@
     "preversion": "npm i && npm run build && npm test && npm run lint",
     "version": "generate-changelog && git add CHANGELOG.md"
   },
+  "exports": {
+    "./deepl": "./dist/deepl/index.js"
+  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
