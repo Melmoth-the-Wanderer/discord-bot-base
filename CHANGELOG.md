@@ -1,3 +1,9 @@
+#### 0.2.1 (2022-10-05)
+
+##### Bug Fixes
+
+*  export types so they are usable ([af39ae63](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/af39ae63f52a7ef9f462b931bf6f8e9beeee29a4))
+
 #### 0.2.0 (2022-10-05)
 
 ##### Refactors
