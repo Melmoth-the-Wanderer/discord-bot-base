@@ -1,3 +1,9 @@
+#### 0.2.2 (2022-10-05)
+
+##### Bug Fixes
+
+* **logger:**  make getDefaultLogLevel public ([4d68c760](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/4d68c7601d696a071d6c59be495a0d8670a4260e))
+
 #### 0.2.1 (2022-10-05)
 
 ##### Bug Fixes
