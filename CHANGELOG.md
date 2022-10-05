@@ -1,3 +1,9 @@
+#### 0.2.0 (2022-10-05)
+
+##### Refactors
+
+*  use constant as namespace-level entry point; add Logger feature ([04e09559](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/04e095595ec881d4a4906af2383c95601f00b2c4))
+
 #### 0.1.2 (2022-10-05)
 
 ##### Chores

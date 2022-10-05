@@ -1,6 +1,6 @@
 {
   "name": "@melmoth-the-wanderer/discord-bot-base",
-  "version": "0.1.2",
+  "version": "0.2.0",
   "description": "Set of common functions to be used in any Discord bot.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
