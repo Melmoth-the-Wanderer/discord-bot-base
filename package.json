@@ -1,5 +1,5 @@
 {
-  "name": "@sagittaron/discord-bot-base",
+  "name": "@melmoth-the-wanderer/discord-bot-base",
   "version": "0.0.1",
   "description": "Set of common functions to be used in any Discord bot.",
   "main": "dist/index.js",
@@ -17,17 +17,17 @@
     "version": "generate-changelog && git add CHANGELOG.md"
   },
   "publishConfig": {
-    "registry": "http://sagittaron:13003/api/packages/Sagittaron/npm/"
+    "registry": "https://npm.pkg.github.com"
   },
   "repository": {
     "type": "git",
-    "url": "http://sagittaron:13003/Sagittaron/discord-bot-base"
+    "url": "https://github.com/Melmoth-the-Wanderer/discord-bot-base.git"
   },
   "bugs": {
-    "url": "http://sagittaron:13003/Sagittaron/discord-bot-base/issues"
+    "url": "https://github.com/Melmoth-the-Wanderer/discord-bot-base.git/issues"
   },
-  "homepage": "http://sagittaron:13003/Sagittaron/discord-bot-base/README.md",
-  "author": "pewinski",
+  "homepage": "https://github.com/Melmoth-the-Wanderer/discord-bot-base.git/README.md",
+  "author": "pevik@proton.me",
   "license": "ISC",
   "devDependencies": {
     "@types/jest": "^29.1.1",
