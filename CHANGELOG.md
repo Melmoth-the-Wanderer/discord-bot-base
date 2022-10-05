@@ -1,3 +1,9 @@
+#### 0.1.2 (2022-10-05)
+
+##### Chores
+
+* **package.json:**  trying out exports ([e78185e9](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/e78185e993c899b1939085dde09d45b23bc64277))
+
 #### 0.1.1 (2022-10-05)
 
 ##### Chores
