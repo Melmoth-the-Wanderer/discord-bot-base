@@ -44,7 +44,7 @@ export class DeepL {
         target_lang: targetLang,
       },
       headers: {
-        Authorization: `DeepL-Auth-Key ${process.env.DEEPL_AUTH_KEY}`,
+        Authorization: `DeepL-Auth-Key ${this.authKey}`,
       },
     };
   }
