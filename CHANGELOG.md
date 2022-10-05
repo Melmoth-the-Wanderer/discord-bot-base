@@ -1,3 +1,9 @@
+#### 0.2.3 (2022-10-05)
+
+##### Chores
+
+* **package.json:**  remove 'exports' ([34fc0bdc](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/34fc0bdc4387f0fc4d4f7677b2ca5d8046b76b07))
+
 #### 0.2.2 (2022-10-05)
 
 ##### Bug Fixes
