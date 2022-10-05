@@ -1,3 +1,9 @@
+#### 0.3.1 (2022-10-05)
+
+##### Bug Fixes
+
+* **logger:**  print string instead of an array ([fa651dcb](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/fa651dcb5ecceb87bee739e566faa0e6e7ff2ce6))
+
 #### 0.3.0 (2022-10-05)
 
 ##### Other Changes
