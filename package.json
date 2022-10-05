@@ -29,6 +29,9 @@
   "homepage": "https://github.com/Melmoth-the-Wanderer/discord-bot-base.git/README.md",
   "author": "pevik@proton.me",
   "license": "ISC",
+  "peerDependencies": {
+    "axios": "^0.27.2"
+  },
   "devDependencies": {
     "@types/jest": "^29.1.1",
     "generate-changelog": "^1.8.0",
