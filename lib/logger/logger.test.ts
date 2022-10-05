@@ -26,17 +26,20 @@ describe('Logger', () => {
   });
 
   it('prints proper prefixes', () => {
-    consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation((args: [string, ...unknown[]]) => {
-      expect(args[0]).toContain('[! ERR !] : ');
+    function getLogPrefix(...args: [string, ...unknown[]]): string {
+      return args[0];
+    }
+    consoleErrorSpy = jest.spyOn(console, 'error').mockImplementation((...args: [string, ...unknown[]]) => {
+      expect(getLogPrefix(...args)).toContain('[! ERR !] : ');
     });
-    consoleWarningSpy = jest.spyOn(console, 'warn').mockImplementation((args: [string, ...unknown[]]) => {
-      expect(args[0]).toContain('[W] : ');
+    consoleWarningSpy = jest.spyOn(console, 'warn').mockImplementation((...args: [string, ...unknown[]]) => {
+      expect(getLogPrefix(...args)).toContain('[W] : ');
     });
-    consoleInfoSpy = jest.spyOn(console, 'info').mockImplementation((args: [string, ...unknown[]]) => {
-      expect(args[0]).toContain('[I] : ');
+    consoleInfoSpy = jest.spyOn(console, 'info').mockImplementation((...args: [string, ...unknown[]]) => {
+      expect(getLogPrefix(...args)).toContain('[I] : ');
     });
-    consoleInfoSpy = jest.spyOn(console, 'log').mockImplementation((args: [string, ...unknown[]]) => {
-      expect(args[0]).toContain('[V] : ');
+    consoleInfoSpy = jest.spyOn(console, 'log').mockImplementation((...args: [string, ...unknown[]]) => {
+      expect(getLogPrefix(...args)).toContain('[V] : ');
     });
     expect.assertions(4);
     devLogger.error(messages.error);

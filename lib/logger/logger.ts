@@ -12,25 +12,25 @@ export class _Logger {
 
   public verbose(...args: unknown[]): void {
     if (this.isVerboseEnabled()) {
-      console.log(this.getLogArguments('V', ...args));
+      console.log(...this.getLogArguments('V', ...args));
     }
   }
 
   public info(...args: unknown[]): void {
     if (this.isInfoEnabled()) {
-      console.info(this.getLogArguments('I', ...args));
+      console.info(...this.getLogArguments('I', ...args));
     }
   }
 
   public warning(...args: unknown[]): void {
     if (this.isWarningEnabled()) {
-      console.warn(this.getLogArguments('W', ...args));
+      console.warn(...this.getLogArguments('W', ...args));
     }
   }
 
   public error(...args: unknown[]): void {
     if (this.isErrorEnabled()) {
-      console.error(this.getLogArguments('! ERR !', ...args));
+      console.error(...this.getLogArguments('! ERR !', ...args));
     }
   }
 
