@@ -1,3 +1,9 @@
+#### 0.3.0 (2022-10-05)
+
+##### Other Changes
+
+* **logger:**  add tests for logger class; reorganize tests, so they lay close to tested class ([770c2070](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/770c2070272f102de37e7e61da4534ab2ccf233d))
+
 #### 0.2.3 (2022-10-05)
 
 ##### Chores
