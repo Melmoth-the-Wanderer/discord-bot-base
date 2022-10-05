@@ -1,5 +1,5 @@
-import axios, {AxiosResponse} from 'axios';
-import {DeepL, DeepLResponse} from '../deepl';
+import axios, { AxiosResponse } from 'axios';
+import { DeepL, DeepLResponse } from '../deepl';
 
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;
@@ -12,7 +12,7 @@ describe('DeepL', () => {
   it('can translate successfully', async () => {
     const response: Partial<AxiosResponse<DeepLResponse>> = {
       data: {
-        translations: [{text: 'test-translated'}]
+        translations: [{ text: 'test-translated' }],
       },
     };
     mockedAxios.get.mockImplementationOnce(() => Promise.resolve(response));
