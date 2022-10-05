@@ -1,8 +1,7 @@
 import { LogLevel } from './model';
 
 export class _Logger {
-  public static getDefaultLogLevel(): LogLevel {
-    const isDevMode = process.env.DISCORD_PTW_BOT_IS_DEV_MODE == 'true';
+  public static getDefaultLogLevel(isDevMode: boolean): LogLevel {
     const devLogLevel = LogLevel.Verbose | LogLevel.Info | LogLevel.Warning | LogLevel.Error;
     const prodLogLevel = LogLevel.Warning | LogLevel.Error;
 
