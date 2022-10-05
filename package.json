@@ -12,7 +12,6 @@
     "format": "prettier --write \"lib/**/*.ts\" \"lib/**/*.js\"",
     "lint": "eslint ./lib/**/*.ts",
     "test": "jest --config jestconfig.json",
-    "prepublishOnly": "npm i && npm run build && npm test && npm run lint",
     "preversion": "npm i && npm run build && npm test && npm run lint",
     "version": "generate-changelog && git add CHANGELOG.md"
   },
