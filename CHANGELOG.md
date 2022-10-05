@@ -1,3 +1,13 @@
+#### 0.1.1 (2022-10-05)
+
+##### Chores
+
+* **package.json:**  remove prepublishOnly script ([a828ea77](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/a828ea771d3b69b152b472d02d86b372cc86ac50))
+
+##### Bug Fixes
+
+* **deepl:**  use private authKey field instead of env variable ([822ed41b](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/822ed41be304f287b34e702092197613df6c2953))
+
 #### 0.1.0 (2022-10-05)
 
 ##### Chores
