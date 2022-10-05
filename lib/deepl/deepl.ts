@@ -1,5 +1,5 @@
 import { AxiosError, AxiosRequestConfig, AxiosResponse } from 'axios';
-import { AxiosUtils } from '../axios';
+import { AxiosUtils } from '../axios/axios';
 import { DeepLResponse } from './model';
 
 const axios = require('axios').default;

@@ -1,5 +1,6 @@
 import axios, { AxiosResponse } from 'axios';
-import { DeepL, DeepLResponse } from '../deepl';
+import { DeepL } from '../deepl/deepl';
+import { DeepLResponse } from '../deepl/model';
 
 jest.mock('axios');
 const mockedAxios = axios as jest.Mocked<typeof axios>;
