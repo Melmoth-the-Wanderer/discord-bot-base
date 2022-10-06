@@ -1,3 +1,13 @@
+#### 0.4.0 (2022-10-06)
+
+##### Chores
+
+* **README.md:**  initialize readme; add docs generation scripts ([fd985448](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/fd9854481e88a10b85e02fabae50634477662bf6))
+
+##### New Features
+
+* **database:**  add database client handlers ([da88910d](https://github.com/Melmoth-the-Wanderer/discord-bot-base/commit/da88910dcfb8b4b4ff3d2de35048346a8be8b079))
+
 #### 0.3.1 (2022-10-05)
 
 ##### Bug Fixes
