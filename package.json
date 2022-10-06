@@ -1,7 +1,17 @@
 {
   "name": "@melmoth-the-wanderer/discord-bot-base",
   "version": "0.3.1",
-  "description": "Set of common functions to be used in any Discord bot.",
+  "author": "pevik@proton.me",
+  "license": "ISC",
+  "description": "Set of common functions to be used in my Discord bots.",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Melmoth-the-Wanderer/discord-bot-base.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Melmoth-the-Wanderer/discord-bot-base/issues"
+  },
+  "homepage": "https://github.com/Melmoth-the-Wanderer/discord-bot-base/README.md",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -9,26 +19,19 @@
   ],
   "scripts": {
     "build": "rimraf ./dist/ && tsc",
+    "watch": "tsc --watch",
     "format": "prettier --write \"lib/**/*.ts\" \"lib/**/*.js\"",
     "lint": "eslint ./lib/**/*.ts",
     "test": "jest --config jestconfig.json",
     "preversion": "npm i && npm run build && npm test && npm run lint",
-    "version": "generate-changelog && git add CHANGELOG.md"
+    "version": "generate-changelog && git add CHANGELOG.md",
+    "supabase:generate": "npx openapi-typescript <url_goes_here>/rest/v1/?apikey=<key_goes_here> --output lib/supabase/model.gen.ts"
   },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Melmoth-the-Wanderer/discord-bot-base.git"
-  },
-  "bugs": {
-    "url": "https://github.com/Melmoth-the-Wanderer/discord-bot-base.git/issues"
-  },
-  "homepage": "https://github.com/Melmoth-the-Wanderer/discord-bot-base.git/README.md",
-  "author": "pevik@proton.me",
-  "license": "ISC",
   "peerDependencies": {
+    "@supabase/supabase-js": "^1.35.7",
     "axios": "^0.27.2"
   },
   "devDependencies": {
@@ -38,6 +41,7 @@
     "eslint": "^8.24.0",
     "generate-changelog": "^1.8.0",
     "jest": "^29.1.2",
+    "openapi-typescript": "^5.4.1",
     "prettier": "^2.7.1",
     "rimraf": "^3.0.2",
     "ts-jest": "^29.0.3",
