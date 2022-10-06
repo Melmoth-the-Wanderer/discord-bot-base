@@ -10,6 +10,9 @@ module.exports = {
   parserOptions: {
     ecmaVersion: 'latest',
   },
+  ignorePatterns: [
+    '**/*/*.gen.ts'
+  ],
   plugins: ['@typescript-eslint'],
   rules: {
     '@typescript-eslint/no-var-requires': ['off'],
