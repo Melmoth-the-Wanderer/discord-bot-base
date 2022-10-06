@@ -10,4 +10,4 @@ Provide DeeL auth key to be able to translate texts using their API.
 Supabase is a cloud services provider of my choice. Requires project url and auth key.
 
 # Docs 
-[link](https://github.com/Melmoth-the-Wanderer/discord-bot-base/tree/main/docs/index.html)
+[link](https://melmoth-the-wanderer.github.io/discord-bot-base/)
